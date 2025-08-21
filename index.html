@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danish Fayaz - Data Scientist Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Danish Fayaz</div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Danish Fayaz</span></h1>
+                <p class="hero-subtitle">Data Scientist & Deep Learning Engineer</p>
+                <p class="hero-description">
+                    A results-driven Data Scientist with expertise in designing and deploying end-to-end
+                    machine learning and natural language processing solutions. Adept at tackling
+                    complex challenges across healthcare, finance, and enterprise automation domains
+                    by leveraging cutting-edge techniques in deep learning, NLP, and computer vision.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="resume.pdf" class="btn btn-secondary" target="_blank">Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    <i class="fas fa-brain"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <div class="resume-section">
+                    <h3>Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">Dec 2022 - Present</div>
+                            <div class="timeline-content">
+                                <h4>Deep Learning Engineer</h4>
+                                <p class="company">StarSoftware</p>
+                                
+                                <div class="project-section collapsible">
+                                    <div class="project-header" onclick="toggleProject(this)">
+                                        <h5 class="project-title">🚀 Automated Document Processing & Extraction System</h5>
+                                        <div class="expand-icon">↓</div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-overview">
+                                            <p class="project-description">Revolutionary end-to-end automation pipeline that transforms unstructured documents into structured, actionable data. Handles invoices, bank statements, transcripts, bills of lading, COAs, and MTRs with unprecedented accuracy.</p>
+                                        </div>
+                                        
+                                        <div class="tech-highlights">
+                                            <h6>🛠️ Technology Stack</h6>
+                                            <div class="tech-tags">
+                                                <span class="tech-tag">NLP</span>
+                                                <span class="tech-tag">OCR</span>
+                                                <span class="tech-tag">Computer Vision</span>
+                                                <span class="tech-tag">Incremental Learning</span>
+                                                <span class="tech-tag">Transformers</span>
+                                                <span class="tech-tag">YOLO</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="achievements-grid">
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🎯</div>
+                                                <h6>Advanced NER Models</h6>
+                                                <p>Built and fine-tuned <span class="highlight-text">54+ NER labels</span> using state-of-the-art transformer models (BERT, RoBERTa, XLM-RoBERTa)</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🧠</div>
+                                                <h6>Incremental Learning</h6>
+                                                <p>Implemented <span class="highlight-text">Elastic Weight Consolidation (EWC)</span> with mixed sampling for continual learning without forgetting</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">👁️</div>
+                                                <h6>OCR & Vision Integration</h6>
+                                                <p>Combined AWS Textract & PyTesseract with <span class="highlight-text">LayoutLM and YOLOv5/v8</span> for layout-aware extraction</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">⚡</div>
+                                                <h6>Performance Optimization</h6>
+                                                <p>Applied <span class="highlight-text">LoRA and QLoRA</span> techniques, achieving significant reductions in training time and memory usage</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🔍</div>
+                                                <h6>Quality Assurance</h6>
+                                                <p>Developed robust ETL pipelines with <span class="highlight-text">Human-in-the-Loop (HITL)</span> review system</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">💰</div>
+                                                <h6>Business Impact</h6>
+                                                <p>Achieved <span class="highlight-text">10x cost reduction</span> with significant accuracy improvements, leading to faster delivery cycles</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-section collapsible">
+                                    <div class="project-header" onclick="toggleProject(this)">
+                                        <h5 class="project-title">🧠 Intelligent Business Document Insight & Analytics Platform</h5>
+                                        <div class="expand-icon">↓</div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-overview">
+                                            <p class="project-description">Next-generation AI-driven platform that transforms complex business documents into intelligent insights. Enables natural language queries and automated report generation for business users.</p>
+                                        </div>
+                                        
+                                        <div class="tech-highlights">
+                                            <h6>🛠️ Technology Stack</h6>
+                                            <div class="tech-tags">
+                                                <span class="tech-tag">LLM Integration</span>
+                                                <span class="tech-tag">LangGraph</span>
+                                                <span class="tech-tag">PostgreSQL</span>
+                                                <span class="tech-tag">ERP Analysis</span>
+                                                <span class="tech-tag">Natural Language</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="achievements-grid">
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🤖</div>
+                                                <h6>LLM Integration</h6>
+                                                <p>Seamlessly integrated <span class="highlight-text">OpenAI and Qwen</span> for advanced natural language analysis and dynamic SQL generation</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🔄</div>
+                                                <h6>Advanced Workflow</h6>
+                                                <p>Architected <span class="highlight-text">LangGraph-based modular workflow</span> with fine-grained control over all processing stages</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">⚡</div>
+                                                <h6>Real-time Processing</h6>
+                                                <p>Connected to <span class="highlight-text">PostgreSQL backend</span> for lightning-fast querying and seamless API integration</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">📊</div>
+                                                <h6>User Experience</h6>
+                                                <p>Designed intuitive architecture supporting <span class="highlight-text">natural language-driven data exploration</span></p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">💼</div>
+                                                <h6>Business Empowerment</h6>
+                                                <p>Users can generate custom reports and dashboards <span class="highlight-text">without any SQL knowledge</span></p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🚀</div>
+                                                <h6>Scalability Focus</h6>
+                                                <p>Continuously optimizing for performance, scalability, and maintainability across all system components</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">July 2022 - Nov 2022</div>
+                            <div class="timeline-content">
+                                <h4>Data Scientist</h4>
+                                <p class="company">TheTransmogrify</p>
+                                <p>Leveraged NER and OCR to extract valuable content from textual and image posts related to diabetes patients. Created visualizations using Grafana and integrated Google Analytics for user insights.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Dec 2021 - Mar 2022</div>
+                            <div class="timeline-content">
+                                <h4>NLP Intern</h4>
+                                <p class="company">XivTech</p>
+                                <p>Utilized AWS Textract, Comprehend and OCR for extracting invoices. Built CI/CD pipeline for Invoice Extraction using Lambda Function and S3. Employed neural networks and BERT for document classification.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">July 2021 - Sep 2021</div>
+                            <div class="timeline-content">
+                                <h4>Research Intern</h4>
+                                <p class="company">Indian Institute of Science, Bangalore</p>
+                                <p>Detection of floating plastic through remote sensing and deep learning techniques. Employed U-Net model for segmentation of floating plastic.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Mar 2021 - June 2021</div>
+                            <div class="timeline-content">
+                                <h4>Machine Learning Intern</h4>
+                                <p class="company">Indian Institute of Technology, Jammu</p>
+                                <p>Applied ML and DL models on CICIDS datasets. Compared random selection and column subset selection methods. Implemented Few Shot learning using CNN.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-section">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <h4>Bachelor's of Computer Science and Engineering</h4>
+                        <p class="institution">National Institute of Technology Srinagar</p>
+                        <p class="year">2018 - 2022 | CGPA: 8.72</p>
+                    </div>
+                </div>
+                <div class="resume-section">
+                    <h3>Certifications & Courses</h3>
+                    <div class="courses-grid">
+                        <div class="course-item">
+                            <h4>AI Data Engineering</h4>
+                            <p>Data Engineering Lifecycle, Batch & Streaming Pipelines, Storage Architectures, ETL Pipelines, DataOps</p>
+                        </div>
+                        <div class="course-item">
+                            <h4>Multi AI Agent Systems with crewAI</h4>
+                            <p>Agents, Tools, Crew, Manager, Memory, Process</p>
+                        </div>
+                        <div class="course-item">
+                            <h4>Machine Learning Engineering for Production (MLOPS)</h4>
+                            <p>Data pipelines, ML system pipelines, Concept drift, Model analysis and Interpretability, NAS, Shadow, Blue Green, Canary Deployment</p>
+                        </div>
+                        <div class="course-item">
+                            <h4>AWS Cloud Technical Essentials</h4>
+                            <p>AWS services such as EC2, Lambda functions, DynamoDB, S3, CloudWatch and Sagemaker</p>
+                        </div>
+                        <div class="course-item">
+                            <h4>Generative Adversarial Networks Specialization (GAN)</h4>
+                            <p>Discriminator, Generator, Adversarial Training, DGAN, WCGAN</p>
+                        </div>
+                        <div class="course-item">
+                            <h4>Deep Learning Specialization</h4>
+                            <p>Neural Network, Hyperparameters tuning, Optimisers, CNN, RNN, LSTM, GRU, Transformer, BERT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Project cards will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Tools</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Machine Learning & Deep Learning</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>TensorFlow</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-fire"></i>
+                            <span>PyTorch</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Natural Language Processing</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-language"></i>
+                            <span>Huggingface</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-link"></i>
+                            <span>Langchain</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-search"></i>
+                            <span>Haystack</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-star"></i>
+                            <span>Ragas</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-users"></i>
+                            <span>Crewai</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Langgraph</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Computer Vision</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-eye"></i>
+                            <span>Detectron2</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-camera"></i>
+                            <span>Ultralytics</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-video"></i>
+                            <span>Supervision</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Cloud Services & Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS Lambda</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS S3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS Textract</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Django</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Data Visualization & Monitoring</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Tableau</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Grafana</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Wandb</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Danish Fayaz. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="mailto:Danishfayaz09@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:9149574409" class="social-link"><i class="fas fa-phone"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
