@@ -64,44 +64,44 @@ document.addEventListener('DOMContentLoaded', () => {
 // Danish's actual projects from resume
 const projects = [
     {
-        title: "RAG-Based QA System",
-        description: "Integrated Retrieval-Augmented Generation (RAG) architecture within Langchain framework, incorporating advanced components. Implemented efficient retrieval mechanisms, parent document retriever, hybrid search, and RAG fusion. Designed prompt-based templates for answer generation using GPT-3.5, GPT-4, Llama 7B, and Cohere. Currently deploying on cloud infrastructure for scalability and reliability.",
-        technologies: ["Langchain", "RAG", "GPT-3.5", "GPT-4", "Llama 7B", "Cohere", "RAGAS"],
-        liveUrl: "#",
-        githubUrl: "#"
-    },
-    {
         title: "Automated Document Processing & Extraction System",
-        description: "Designed and deployed an end-to-end automation pipeline to extract structured data from documents such as invoices, bank statements, transcripts, bills of lading, COAs, and MTRs. Built and fine-tuned 54+ NER labels using transformer models including BERT, RoBERTa, and XLM-RoBERTa. Implemented incremental learning with mixed sampling of old and new data and Elastic Weight Consolidation (EWC) to support continual learning.",
-        technologies: ["BERT", "RoBERTa", "XLM-RoBERTa", "YOLOv5/v8", "AWS Textract", "Detectron2", "LoRA", "QLoRA"],
+        description: "Enterprise-grade document intelligence platform that revolutionizes data extraction from complex documents including invoices, bank statements, transcripts, bills of lading, COAs, and MTRs. Built with state-of-the-art NLP and computer vision technologies, achieving 10x cost reduction and significant accuracy improvements. Features 54+ fine-tuned NER labels using BERT, RoBERTa, and XLM-RoBERTa, with advanced incremental learning and Elastic Weight Consolidation (EWC) for continual learning.",
+        technologies: ["BERT/RoBERTa", "YOLOv5/v8", "AWS Textract", "Incremental Learning", "EWC", "LoRA/QLoRA", "Detectron2", "OCR"],
         liveUrl: "#",
         githubUrl: "#"
     },
     {
         title: "Intelligent Business Document Insight & Analytics Platform",
-        description: "Building an advanced AI-driven platform to extract insights from complex business data sources such as invoices, COAs, Material Test Reports (MTRs), and ERP systems. Integrated LLMs (OpenAI, Qwen) for natural language analysis, enabling dynamic SQL query generation and query rewriting. Architected a LangGraph-based modular workflow with fine-grained control over validation and error handling.",
-        technologies: ["LLMs", "OpenAI", "Qwen", "LangGraph", "PostgreSQL", "Natural Language Processing"],
+        description: "AI-driven business intelligence platform that transforms complex business data into actionable insights. Features natural language-driven data exploration, dynamic SQL generation, and comprehensive ERP analysis capabilities. Integrated with OpenAI and Qwen LLMs for intelligent query processing, LangGraph-based modular workflows, and PostgreSQL backend for real-time analytics. Empowers business users to generate custom reports without technical knowledge.",
+        technologies: ["LLMs (OpenAI/Qwen)", "LangGraph", "PostgreSQL", "Natural Language SQL", "ERP Integration", "Business Analytics"],
         liveUrl: "#",
         githubUrl: "#"
     },
     {
-        title: "Facial Emotion Recognition",
-        description: "Developed a deep learning model for emotion recognition focused on a 7-class classification problem, distinguishing Happy, Sad, Neutral, Surprise, Angry, Disgust, and Fear emotions. Leveraged advanced neural network architectures and image processing techniques to achieve high classification accuracy. Results demonstrate the ability to accurately classify emotions with potential applications in healthcare, marketing, and entertainment.",
-        technologies: ["Deep Learning", "CNN", "Image Processing", "7-Class Classification", "Neural Networks"],
+        title: "RAG-Based QA System",
+        description: "Advanced question-answering system built with Retrieval-Augmented Generation architecture, featuring hybrid search, RAG fusion, and multi-model support. Implements sophisticated query decomposition and RAGAS-optimized components for enhanced accuracy and performance across diverse query loads. Currently deploying on cloud infrastructure for scalability and reliability with support for GPT-3.5, GPT-4, Llama 7B, and Cohere models.",
+        technologies: ["Langchain", "RAG", "GPT-4", "Llama 7B", "RAGAS", "Hybrid Search", "Query Decomposition"],
+        liveUrl: "#",
+        githubUrl: "#"
+    },
+    {
+        title: "Facial Emotion Recognition System",
+        description: "Advanced emotion recognition model achieving high classification accuracy across 7 distinct emotions (Happy, Sad, Neutral, Surprise, Angry, Disgust, Fear). Leverages cutting-edge neural architectures and sophisticated image processing techniques for real-time emotion detection. Demonstrates exceptional performance with potential applications in healthcare, marketing, and entertainment industries.",
+        technologies: ["Deep Learning", "Computer Vision", "Neural Networks", "Image Processing", "7-Class Classification", "Real-time Processing"],
         liveUrl: "#",
         githubUrl: "#"
     },
     {
         title: "Diabetes Insight Tracker",
-        description: "Leveraged Named Entity Recognition (NER) to extract valuable content from textual posts within applications, focusing on posts related to the health of Diabetes patients. Applied Optical Character Recognition (OCR) to detect and analyze glucose levels from image posts. Stored extracted content efficiently in PostgreSQL database and created visualizations using Grafana for trends and events.",
-        technologies: ["NER", "OCR", "PostgreSQL", "Grafana", "Google Analytics", "Health Data Analysis"],
+        description: "Comprehensive health analytics platform leveraging advanced NLP and computer vision techniques to extract insights from diabetes patient data. Implements Named Entity Recognition (NER) for textual content analysis and Optical Character Recognition (OCR) for glucose level detection from images. Features PostgreSQL database integration, Grafana visualizations, and Google Analytics for comprehensive health monitoring and trend analysis.",
+        technologies: ["NER", "OCR", "PostgreSQL", "Grafana", "Google Analytics", "Health Data Analysis", "NLP"],
         liveUrl: "#",
         githubUrl: "#"
     },
     {
-        title: "Floating Plastic Detection",
-        description: "Detection of floating plastic through the utilization of remote sensing and deep learning techniques. Employed a U-Net model for the segmentation of floating plastic. This research project at IISc Bangalore focused on environmental monitoring and conservation using advanced computer vision techniques.",
-        technologies: ["U-Net", "Deep Learning", "Remote Sensing", "Computer Vision", "Segmentation", "Environmental Monitoring"],
+        title: "Environmental Plastic Detection System",
+        description: "Cutting-edge environmental monitoring research project using remote sensing and deep learning techniques for marine conservation. Implements U-Net architecture for accurate segmentation of floating plastic debris in complex marine environments. Contributes to ocean conservation efforts and environmental protection through advanced AI-powered monitoring systems with real-world impact.",
+        technologies: ["U-Net", "Deep Learning", "Remote Sensing", "Computer Vision", "Image Segmentation", "Environmental AI"],
         liveUrl: "#",
         githubUrl: "#"
     }
@@ -166,27 +166,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Add typing effect to hero title
-function typeWriter(element, text, speed = 100) {
-    let i = 0;
-    element.innerHTML = '';
-    
-    function type() {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        }
-    }
-    
-    type();
-}
-
-// Initialize typing effect when page loads
+// Hero title will display normally without typing effect
 document.addEventListener('DOMContentLoaded', () => {
+    // Ensure the hero title displays properly
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
-        const originalText = heroTitle.innerHTML;
-        typeWriter(heroTitle, originalText, 50);
+        // Make sure the HTML is properly rendered
+        heroTitle.innerHTML = heroTitle.innerHTML;
     }
 });

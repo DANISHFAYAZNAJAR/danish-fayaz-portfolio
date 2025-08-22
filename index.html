@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danish Fayaz - Data Scientist Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -24,6 +24,9 @@
                     <a href="#projects" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
                     <a href="#skills" class="nav-link">Skills</a>
                 </li>
             </ul>
@@ -40,7 +43,7 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">Hi, I'm <span class="highlight">Danish Fayaz</span></h1>
-                <p class="hero-subtitle">Data Scientist & Deep Learning Engineer</p>
+                <p class="hero-subtitle">Data Scientist</p>
                 <p class="hero-description">
                     A results-driven Data Scientist with expertise in designing and deploying end-to-end
                     machine learning and natural language processing solutions. Adept at tackling
@@ -203,31 +206,263 @@
                             <div class="timeline-content">
                                 <h4>Data Scientist</h4>
                                 <p class="company">TheTransmogrify</p>
-                                <p>Leveraged NER and OCR to extract valuable content from textual and image posts related to diabetes patients. Created visualizations using Grafana and integrated Google Analytics for user insights.</p>
+                                <div class="project-section collapsible">
+                                    <div class="project-header" onclick="toggleProject(this)">
+                                        <h5 class="project-title">🏥 Diabetes Insight Tracker</h5>
+                                        <div class="expand-icon">↓</div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-overview">
+                                            <p class="project-description">Comprehensive health analytics platform that leverages advanced NLP and computer vision techniques to extract insights from diabetes patient data, enabling better healthcare outcomes and patient monitoring.</p>
+                                        </div>
+                                        
+                                        <div class="tech-highlights">
+                                            <h6>🛠️ Technology Stack</h6>
+                                            <div class="tech-tags">
+                                                <span class="tech-tag">NER</span>
+                                                <span class="tech-tag">OCR</span>
+                                                <span class="tech-tag">PostgreSQL</span>
+                                                <span class="tech-tag">Grafana</span>
+                                                <span class="tech-tag">Google Analytics</span>
+                                                <span class="tech-tag">Health Data</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="achievements-grid">
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🔍</div>
+                                                <h6>Named Entity Recognition</h6>
+                                                <p>Leveraged NER to extract valuable content from textual posts within applications, focusing on posts related to the health of Diabetes patients on the website.</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">👁️</div>
+                                                <h6>Optical Character Recognition</h6>
+                                                <p>Applied OCR to detect and analyze glucose levels from image posts within the application, specifically targeting posts related to the health status of users managing diabetes.</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🗄️</div>
+                                                <h6>Data Storage & Management</h6>
+                                                <p>Stored the extracted content efficiently in a PostgreSQL database, ensuring organized and accessible data for further analysis and insights.</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">📊</div>
+                                                <h6>Data Visualization</h6>
+                                                <p>Utilized Grafana to create visualizations for trends and events within the database, enhancing data interpretation and decision-making for monitoring health-related patterns.</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">📈</div>
+                                                <h6>Analytics Integration</h6>
+                                                <p>Integrated Google Analytics to capture and analyze user events on the website, gaining valuable insights into user interactions and engagement, and contributing to the improvement of the overall platform.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-date">Dec 2021 - Mar 2022</div>
                             <div class="timeline-content">
-                                <h4>NLP Intern</h4>
+                                <h4>Natural Language Processing Intern</h4>
                                 <p class="company">XivTech</p>
-                                <p>Utilized AWS Textract, Comprehend and OCR for extracting invoices. Built CI/CD pipeline for Invoice Extraction using Lambda Function and S3. Employed neural networks and BERT for document classification.</p>
+                                <div class="project-section collapsible">
+                                    <div class="project-header" onclick="toggleProject(this)">
+                                        <h5 class="project-title">📄 Intelligent Invoice Processing System</h5>
+                                        <div class="expand-icon">↓</div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-overview">
+                                            <p class="project-description">End-to-end automated invoice processing system that leverages AWS cloud services and advanced NLP techniques to extract, classify, and process financial documents with high accuracy and efficiency.</p>
+                                        </div>
+                                        
+                                        <div class="tech-highlights">
+                                            <h6>🛠️ Technology Stack</h6>
+                                            <div class="tech-tags">
+                                                <span class="tech-tag">AWS Textract</span>
+                                                <span class="tech-tag">AWS Comprehend</span>
+                                                <span class="tech-tag">AWS Lambda</span>
+                                                <span class="tech-tag">AWS S3</span>
+                                                <span class="tech-tag">BERT</span>
+                                                <span class="tech-tag">CI/CD</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="achievements-grid">
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🔧</div>
+                                                <h6>Pipeline Development</h6>
+                                                <p>Built end-to-end invoice processing pipeline using AWS Textract and Comprehend services for automated document extraction and analysis.</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">⚡</div>
+                                                <h6>CI/CD Implementation</h6>
+                                                <p>Developed robust CI/CD pipeline for automated invoice extraction using AWS Lambda functions and S3 storage for seamless deployment and updates.</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🧠</div>
+                                                <h6>Neural Network Classification</h6>
+                                                <p>Implemented BERT-based neural networks for intelligent document classification into invoices, bills, and other financial documents with high accuracy.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        
                         <div class="timeline-item">
                             <div class="timeline-date">July 2021 - Sep 2021</div>
                             <div class="timeline-content">
                                 <h4>Research Intern</h4>
                                 <p class="company">Indian Institute of Science, Bangalore</p>
-                                <p>Detection of floating plastic through remote sensing and deep learning techniques. Employed U-Net model for segmentation of floating plastic.</p>
+                                <div class="project-section collapsible">
+                                    <div class="project-header" onclick="toggleProject(this)">
+                                        <h5 class="project-title">🌊 Environmental Plastic Detection System</h5>
+                                        <div class="expand-icon">↓</div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-overview">
+                                            <p class="project-description">Cutting-edge research project focused on environmental conservation using remote sensing and deep learning techniques to detect and segment floating plastic debris in marine environments.</p>
+                                        </div>
+                                        
+                                        <div class="tech-highlights">
+                                            <h6>🛠️ Technology Stack</h6>
+                                            <div class="tech-tags">
+                                                <span class="tech-tag">Remote Sensing</span>
+                                                <span class="tech-tag">Deep Learning</span>
+                                                <span class="tech-tag">U-Net</span>
+                                                <span class="tech-tag">Image Segmentation</span>
+                                                <span class="tech-tag">Environmental AI</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="achievements-grid">
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🔬</div>
+                                                <h6>Research Innovation</h6>
+                                                <p>Pioneered environmental monitoring research using remote sensing and deep learning techniques for marine plastic detection and analysis.</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🖼️</div>
+                                                <h6>U-Net Architecture</h6>
+                                                <p>Developed and optimized U-Net architecture for accurate segmentation of floating plastic debris in complex marine environments.</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🌍</div>
+                                                <h6>Environmental Impact</h6>
+                                                <p>Contributed to ocean conservation efforts and environmental protection through advanced AI-powered monitoring systems.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        
                         <div class="timeline-item">
                             <div class="timeline-date">Mar 2021 - June 2021</div>
                             <div class="timeline-content">
                                 <h4>Machine Learning Intern</h4>
                                 <p class="company">Indian Institute of Technology, Jammu</p>
-                                <p>Applied ML and DL models on CICIDS datasets. Compared random selection and column subset selection methods. Implemented Few Shot learning using CNN.</p>
+                                <div class="project-section collapsible">
+                                    <div class="project-header" onclick="toggleProject(this)">
+                                        <h5 class="project-title">🛡️ Cybersecurity Dataset Analysis</h5>
+                                        <div class="expand-icon">↓</div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-overview">
+                                            <p class="project-description">Comprehensive cybersecurity research project analyzing CICIDS datasets using advanced machine learning and deep learning models to improve threat detection and security analysis.</p>
+                                        </div>
+                                        
+                                        <div class="tech-highlights">
+                                            <h6>🛠️ Technology Stack</h6>
+                                            <div class="tech-tags">
+                                                <span class="tech-tag">Machine Learning</span>
+                                                <span class="tech-tag">Deep Learning</span>
+                                                <span class="tech-tag">CICIDS Dataset</span>
+                                                <span class="tech-tag">Feature Engineering</span>
+                                                <span class="tech-tag">Few-Shot Learning</span>
+                                                <span class="tech-tag">CNN</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="achievements-grid">
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">📊</div>
+                                                <h6>Dataset Analysis</h6>
+                                                <p>Conducted comprehensive analysis of CICIDS cybersecurity datasets using advanced ML and DL models for threat detection and security analysis.</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🔍</div>
+                                                <h6>Feature Engineering Research</h6>
+                                                <p>Evaluated and compared random selection vs. column subset selection methodologies for optimal feature engineering in cybersecurity applications.</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🚀</div>
+                                                <h6>Few-Shot Learning Implementation</h6>
+                                                <p>Implemented innovative Few-Shot Learning approach using Convolutional Neural Networks for limited data scenarios in cybersecurity applications.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">Jan 2021 - Mar 2021</div>
+                            <div class="timeline-content">
+                                <h4>Deep Learning Intern</h4>
+                                <p class="company">Indian Institute of Technology, Bhubaneswar</p>
+                                <div class="project-section collapsible">
+                                    <div class="project-header" onclick="toggleProject(this)">
+                                        <h5 class="project-title">👁️ Computer Vision & Image Segmentation</h5>
+                                        <div class="expand-icon">↓</div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-overview">
+                                            <p class="project-description">Advanced computer vision research project focusing on object detection, classification, and precise image segmentation using deep learning models for medical and industrial applications.</p>
+                                        </div>
+                                        
+                                        <div class="tech-highlights">
+                                            <h6>🛠️ Technology Stack</h6>
+                                            <div class="tech-tags">
+                                                <span class="tech-tag">Computer Vision</span>
+                                                <span class="tech-tag">Deep Learning</span>
+                                                <span class="tech-tag">Object Detection</span>
+                                                <span class="tech-tag">Image Classification</span>
+                                                <span class="tech-tag">U-Net</span>
+                                                <span class="tech-tag">Image Segmentation</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="achievements-grid">
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🔍</div>
+                                                <h6>Computer Vision Solutions</h6>
+                                                <p>Developed advanced computer vision solutions for object detection and classification using state-of-the-art deep learning models.</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🖼️</div>
+                                                <h6>U-Net Implementation</h6>
+                                                <p>Implemented and optimized U-Net architecture for precise image segmentation tasks with high accuracy and efficiency.</p>
+                                            </div>
+                                            
+                                            <div class="achievement-card">
+                                                <div class="achievement-icon">🏥</div>
+                                                <h6>Real-World Applications</h6>
+                                                <p>Focused on practical applications in medical imaging and industrial processes for real-world deployment and impact.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -240,35 +475,7 @@
                         <p class="year">2018 - 2022 | CGPA: 8.72</p>
                     </div>
                 </div>
-                <div class="resume-section">
-                    <h3>Certifications & Courses</h3>
-                    <div class="courses-grid">
-                        <div class="course-item">
-                            <h4>AI Data Engineering</h4>
-                            <p>Data Engineering Lifecycle, Batch & Streaming Pipelines, Storage Architectures, ETL Pipelines, DataOps</p>
-                        </div>
-                        <div class="course-item">
-                            <h4>Multi AI Agent Systems with crewAI</h4>
-                            <p>Agents, Tools, Crew, Manager, Memory, Process</p>
-                        </div>
-                        <div class="course-item">
-                            <h4>Machine Learning Engineering for Production (MLOPS)</h4>
-                            <p>Data pipelines, ML system pipelines, Concept drift, Model analysis and Interpretability, NAS, Shadow, Blue Green, Canary Deployment</p>
-                        </div>
-                        <div class="course-item">
-                            <h4>AWS Cloud Technical Essentials</h4>
-                            <p>AWS services such as EC2, Lambda functions, DynamoDB, S3, CloudWatch and Sagemaker</p>
-                        </div>
-                        <div class="course-item">
-                            <h4>Generative Adversarial Networks Specialization (GAN)</h4>
-                            <p>Discriminator, Generator, Adversarial Training, DGAN, WCGAN</p>
-                        </div>
-                        <div class="course-item">
-                            <h4>Deep Learning Specialization</h4>
-                            <p>Neural Network, Hyperparameters tuning, Optimisers, CNN, RNN, LSTM, GRU, Transformer, BERT</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -279,6 +486,39 @@
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid" id="projectsGrid">
                 <!-- Project cards will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Courses</h2>
+            <div class="courses-grid">
+                <div class="course-item">
+                    <h4>AI Data Engineering</h4>
+                    <p>Data Engineering Lifecycle, Batch & Streaming Pipelines, Storage Architectures, ETL Pipelines, DataOps</p>
+                </div>
+                <div class="course-item">
+                    <h4>Multi AI Agent Systems with crewAI</h4>
+                    <p>Agents, Tools, Crew, Manager, Memory, Process</p>
+                </div>
+                <div class="course-item">
+                    <h4>Machine Learning Engineering for Production (MLOPS)</h4>
+                    <p>Data pipelines, ML system pipelines, Concept drift, Model analysis and Interpretability, NAS, Shadow, Blue Green, Canary Deployment</p>
+                </div>
+                <div class="course-item">
+                    <h4>AWS Cloud Technical Essentials</h4>
+                    <p>AWS services such as EC2, Lambda functions, DynamoDB, S3, CloudWatch and Sagemaker</p>
+                </div>
+                <div class="course-item">
+                    <h4>Generative Adversarial Networks Specialization (GAN)</h4>
+                    <p>Discriminator, Generator, Adversarial Training, DGAN, WCGAN</p>
+                </div>
+                <div class="course-item">
+                    <h4>Deep Learning Specialization</h4>
+                    <p>Neural Network, Hyperparameters tuning, Optimisers, CNN, RNN, LSTM, GRU, Transformer, BERT</p>
+                </div>
             </div>
         </div>
     </section>
