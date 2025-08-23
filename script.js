@@ -65,15 +65,15 @@ document.addEventListener('DOMContentLoaded', () => {
 const projects = [
     {
         title: "Automated Document Processing & Extraction System",
-        description: "Enterprise-grade document intelligence platform that revolutionizes data extraction from complex documents including invoices, bank statements, transcripts, bills of lading, COAs, and MTRs. Built with state-of-the-art NLP and computer vision technologies, achieving 10x cost reduction and significant accuracy improvements. Features 54+ fine-tuned NER labels using BERT, RoBERTa, and XLM-RoBERTa, with advanced incremental learning and Elastic Weight Consolidation (EWC) for continual learning.",
-        technologies: ["BERT/RoBERTa", "YOLOv5/v8", "AWS Textract", "Incremental Learning", "EWC", "LoRA/QLoRA", "Detectron2", "OCR"],
+        description: "End-to-end intelligent document automation pipeline for Invoices, COAs, MTRs, Transcripts, and Bank Statements. Integrates OCR (AWS Textract, PyTesseract), LayoutLM, YOLOv5/v8, and transformer models (BERT, RoBERTa, XLM-RoBERTa) for high-accuracy data extraction. Built generalized invoice model achieving 6× faster processing and 10× cost reduction, extended to MTRs and COAs via modular ETL/validation pipelines with HITL review. Leveraged LLMs for chemical/mechanical property extraction from MTRs, COA specification parsing, and PO-invoice reconciliation. Implemented continual learning workflows (EWC, LoRA/QLoRA) for client-specific document adaptation. Delivered 5× client acquisition increase, accelerated delivery cycles, and unlocked new revenue streams.",
+        technologies: ["OCR (AWS Textract, PyTesseract)", "LayoutLM", "YOLOv5/v8", "Transformers (BERT, RoBERTa, XLM-RoBERTa)", "Incremental Learning", "EWC", "LoRA/QLoRA", "ETL Pipelines", "HITL Review"],
         liveUrl: "#",
         githubUrl: "#"
     },
     {
-        title: "Intelligent Business Document Insight & Analytics Platform",
-        description: "AI-driven business intelligence platform that transforms complex business data into actionable insights. Features natural language-driven data exploration, dynamic SQL generation, and comprehensive ERP analysis capabilities. Integrated with OpenAI and Qwen LLMs for intelligent query processing, LangGraph-based modular workflows, and PostgreSQL backend for real-time analytics. Empowers business users to generate custom reports without technical knowledge.",
-        technologies: ["LLMs (OpenAI/Qwen)", "LangGraph", "PostgreSQL", "Natural Language SQL", "ERP Integration", "Business Analytics"],
+        title: "Intelligent Business Document Insight Chatbot",
+        description: "AI-driven platform for business-critical documents (Invoices, COAs, Material Test Reports, ERP data) with real-time querying and analytics. Integrated LLMs for natural language query understanding, SQL generation, query rewriting, error recovery, and response classification, enabling SQL-free data exploration. Architected LangGraph-based modular workflows with fine-grained stages for validation, error handling, memory management (short-term & long-term), and output post-processing. Developed ETL pipelines to sync data from multiple databases and APIs into centralized PostgreSQL with real-time updates. Implemented RAG pipelines for ad-hoc document Q&A — users can upload new documents and instantly query properties without retraining. Enhanced chatbot with contextual suggestions, memory-based follow-up handling, and semantic search. Improved scalability, speed, and accuracy while ensuring maintainability and seamless ERP integration.",
+        technologies: ["LLM Integration", "LangGraph", "PostgreSQL", "RAG Pipelines", "ETL Pipelines", "Natural Language Processing", "Memory Management", "Semantic Search"],
         liveUrl: "#",
         githubUrl: "#"
     },
